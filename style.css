@@ -1,0 +1,63 @@
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    height: 80px;
+    background-color: #242424;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    padding: 10px;
+    display: none;
+    animation: showNotification 1s ease-in-out;
+  }
+  
+  @keyframes showNotification {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .ps3-box {
+    width: 60px;
+    height: 60px;
+    background-color: #000000;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ps3-box img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+  
